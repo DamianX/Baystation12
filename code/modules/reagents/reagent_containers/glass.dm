@@ -111,6 +111,7 @@
 	item_state = "beaker"
 	center_of_mass = "x=15;y=10"
 	matter = list("glass" = 500)
+	layer = ABOVE_OBJ_LAYER
 
 	New()
 		..()
