@@ -228,6 +228,7 @@ other types of metals and chemistry for reagents).
 /datum/design/item/powercell/Fabricate()
 	var/obj/item/weapon/cell/C = ..()
 	C.charge = 0 //shouldn't produce power out of thin air.
+	C.update_icon()
 	return C
 
 /datum/design/item/powercell/basic
