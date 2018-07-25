@@ -48,6 +48,7 @@
 	var/obj/skybox/skybox
 
 /mob/Move()
+	glide_size = DELAY2GLIDESIZE(movement_delay())
 	. = ..()
 	if(. && skybox)
 		skybox.update()
