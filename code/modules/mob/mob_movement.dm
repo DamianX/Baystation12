@@ -152,6 +152,7 @@
 			set_dir(direct)
 
 		src.move_speed = world.time - src.l_move_time
+		glide_size = DELAY2GLIDESIZE(move_speed) // This works only AFTER the first Move(), of course
 		src.l_move_time = world.time
 		src.m_flag = 1
 		if ((A != src.loc && A && A.z == src.z))
