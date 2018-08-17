@@ -202,7 +202,8 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 	initializations_finished_with_no_players_logged_in = initialized_tod < REALTIMEOFDAY - 10
 	// Loop.
-	Master.StartProcessing(0)
+	world.Reboot()
+	//Master.StartProcessing(0)
 
 /datum/controller/master/proc/SetRunLevel(new_runlevel)
 	var/old_runlevel = current_runlevel
